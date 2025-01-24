@@ -2,7 +2,7 @@
 class Storage {
   #items;
   constructor(items) {
-    this.#items = [...items];
+    this.#items = items.slice(0, items.length + 1);
   }
   getItems() {
     return this.#items;
